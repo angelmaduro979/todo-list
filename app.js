@@ -24,12 +24,10 @@ const renderFunction=()=>{
     tasksRender.innerHTML='';
     
     todoList.forEach(task => {
-        const createLi=document.createElement('li');
-        createLi.textContent=task;
-        tasksRender.appendChild(createLi) 
-        
+        let createLi = document.createElement('li');
+        createLi.textContent = task;
+        tasksRender.appendChild(createLi); 
     })
-    
 }
 
 const saveData=()=>{
@@ -40,7 +38,7 @@ const saveData=()=>{
 
 const loadData=()=>{
     let data=localStorage.getItem('todoList')
-    if(data){
+    if(data && data!=='[]'){
         console.log('Cargando datos desde localStorage...');
         todoList= JSON.parse(data);
         console.log('Datos cargados correctamente desde localStorage:', todoList);
