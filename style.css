@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, purple, pink);
+    font-family: "Proxima Nova", -apple-system, "Helvetica Neue", helvetica, roboto, arial, sans-serif;
+    
+}
+
+.todoListSection{
+    align-self: center;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    
+}
+
+.todoListSection .formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+    width: 300px;
+    gap: 20px;
+    border-radius: 5px;
+    background:linear-gradient(to right, #cecece,#ffffff);
+
+}
+
+
+.todoListSection #form{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todoListSection #form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #cecece;
+}
+
+.todoListSection #form input:focus{
+    outline: none;
+}
+
+
+.todoListSection .formContainer ol{
+    margin-left: 20px;
+}
+
+.formContainer ol span{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.formContainer #button{
+    padding: 5px;
+    background-color: #30D24E;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+#button:hover{
+    cursor: pointer;
+    background-color: #39ff5d;
+}
+
+.formContainer #resetButton{
+    padding: 5px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+#resetButton:hover{
+    cursor: pointer;
+    background-color:rgb(255, 87, 87);
+}
+
